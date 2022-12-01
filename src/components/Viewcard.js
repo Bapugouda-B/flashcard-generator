@@ -137,7 +137,7 @@ const Viewcard = ({ data }) => {
             </div>
           ))}
       </div>
-      ){openModal && <Popup closeModal={setOpenModal} />}
+      {openModal && <Popup closeModal={setOpenModal} />}
     </div>
   );
 };

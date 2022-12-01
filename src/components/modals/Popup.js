@@ -5,9 +5,9 @@ import { GrClose } from "react-icons/gr";
 
 // passing props to viewcard component and accessing state for handling close button
 function Popup({ closeModal }) {
-  const [copyText, setCopyText] = useState('http://www.example.com/share-link');
+  const [copyText, setCopyText] = useState(window.location.href);
 
-//onclick function for coping url as a link.
+  //onclick function for coping url as a link.
 const copyLink=()=>{
   navigator.clipboard.writeText(copyText)
   alert('Link is Copied')
@@ -30,7 +30,6 @@ const copyLink=()=>{
             className="border-2 border-dashed rounded-md  w-full py-2 px-2 pr-3 font-semibold text-sm "
             type="text"
             onChange={(e)=>setCopyText()}
-
             value={window.location.href}
           />
           <button className="flex items-center justify-center  opacity-60 mx-4">
