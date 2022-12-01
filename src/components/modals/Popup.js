@@ -16,8 +16,8 @@ const copyLink=()=>{
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-slate-50 rounded-lg mx-auto my-40  w-1/3 h-60 outline-none align-middle ">
-        <div className="flex items-end justify-end m-3 opacity-50 hover:opacity-100">
+      <div className="mx-7 sm:mx-12 md:mx-20 lg:mx-24 bg-slate-50 rounded-lg sm:w-1/3 md:w-1/2 lg:w-1/3 h-56 outline-none align-middle ">
+        <div className="flex  justify-end m-3 opacity-50 hover:opacity-100">
           <button onClick={() => closeModal(false)} className="close">
             <GrClose />
           </button>
