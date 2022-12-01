@@ -16,16 +16,16 @@ const copyLink=()=>{
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="mx-7 sm:mx-12 md:mx-20 lg:mx-24 bg-slate-50 rounded-lg sm:w-1/3 md:w-1/2 lg:w-1/3 h-56 outline-none align-middle ">
+      <div className="mx-7 lg:w-96 lg:h-60 bg-slate-50 rounded-lg outline-none align-middle ">
         <div className="flex  justify-end m-3 opacity-50 hover:opacity-100">
           <button onClick={() => closeModal(false)} className="close">
             <GrClose />
           </button>
         </div>
 
-        <span className="text-lg font-semibold px-10">Share</span>
+        <span className="text-lg font-semibold px-7">Share</span>
 
-        <div className="my-4 px-10 flex items-center justify-center ">
+        <div className="my-4 px-7 flex items-center justify-center ">
           <input
             className="border-2 border-dashed rounded-md  w-full py-2 px-2 pr-3 font-semibold text-sm "
             type="text"
@@ -38,7 +38,7 @@ const copyLink=()=>{
           </button>
         </div>
         <div className="icons">
-          <ul className="flex items-center justify-around px-6 py-4">
+          <ul className="flex items-center justify-around px-6 py-6">
             <div className="bg-blue-600  absolute-center">
               <a href="#/">
                 <i className="text-white fab fa-facebook-f"></i>
