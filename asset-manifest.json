@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/flashcard-generator/static/css/main.f47dc991.css",
-    "main.js": "/flashcard-generator/static/js/main.1f65f89f.js",
+    "main.js": "/flashcard-generator/static/js/main.e4c15d0e.js",
     "index.html": "/flashcard-generator/index.html",
     "main.f47dc991.css.map": "/flashcard-generator/static/css/main.f47dc991.css.map",
-    "main.1f65f89f.js.map": "/flashcard-generator/static/js/main.1f65f89f.js.map"
+    "main.e4c15d0e.js.map": "/flashcard-generator/static/js/main.e4c15d0e.js.map"
   },
   "entrypoints": [
     "static/css/main.f47dc991.css",
-    "static/js/main.1f65f89f.js"
+    "static/js/main.e4c15d0e.js"
   ]
 }
