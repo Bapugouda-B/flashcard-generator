@@ -11,6 +11,7 @@ function Popup({ closeModal }) {
 const copyLink=()=>{
   navigator.clipboard.writeText(copyText)
   alert('Link is Copied')
+  setCopyText()
 }
  
 
@@ -29,7 +30,6 @@ const copyLink=()=>{
           <input
             className="border-2 border-dashed rounded-md  w-full py-2 px-2 pr-3 font-semibold text-sm "
             type="text"
-            onChange={(e)=>setCopyText()}
             value={window.location.href}
           />
           <button className="flex items-center justify-center  opacity-60 mx-4">
