@@ -4,7 +4,7 @@ import { MdEast, MdDoubleArrow, MdDeleteOutline } from "react-icons/md";
 import {
   getMyflashCards,
   deleteFlashCardById,
-} from "../service/Localstorage.js";
+} from "../../service/Localstorage.js";
 
 const Mycards = () => {
   const navigate = useNavigate();
@@ -33,6 +33,7 @@ const Mycards = () => {
   //using onClick function, Navigating to card details component with unique card id.
   const cardView = (card) => {
     navigate(`/view-card/details/${card.id}`);
+    window.location.reload();
   };
 
   return (

@@ -8,9 +8,10 @@ function Popup({ closeModal }) {
   const [copyText, setCopyText] = useState(window.location.href);
 
   //onclick function for coping url as a link.
-const copyLink=()=>{
+const copyLink=(e)=>{
   navigator.clipboard.writeText(copyText)
   alert('Link is Copied')
+  setCopyText(e.target.value)
 }
  
 
@@ -29,8 +30,8 @@ const copyLink=()=>{
           <input
             className="border-2 border-dashed rounded-md  w-full py-2 px-2 pr-3 font-semibold text-sm "
             type="text"
-            onChange={(e)=>setCopyText()}
-            value={window.location.href}
+            // onChange={(e)=>setCopyText(e.target.value)}
+            value={copyText}
           />
           <button className="flex items-center justify-center  opacity-60 mx-4">
           <BiCopyAlt onClick={copyLink} className="text-2xl  hover:opacity-70" /> <BsShare className="text-lg ml-4" /> 
