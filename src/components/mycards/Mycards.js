@@ -33,6 +33,7 @@ const Mycards = () => {
   //using onClick function, Navigating to particular card details page.
   const cardView = (card) => {
     navigate(`/view-card/details/${card.id}`);
+    window.location.reload();
   };
 
   return (
