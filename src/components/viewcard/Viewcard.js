@@ -8,7 +8,7 @@ import {
 } from "react-icons/md";
 import { GrRedo } from "react-icons/gr";
 import { Link, useParams } from "react-router-dom";
-import Popup from "../components/modals/Popup";
+import Popup from "../modals/Popup.js";
 
 const Viewcard = ({ data }) => {
   const { id } = useParams();
@@ -137,7 +137,7 @@ const Viewcard = ({ data }) => {
             </div>
           ))}
       </div>
-      ){openModal && <Popup closeModal={setOpenModal} />}
+      {openModal && <Popup closeModal={setOpenModal} />}
     </div>
   );
 };

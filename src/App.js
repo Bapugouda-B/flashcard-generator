@@ -1,7 +1,10 @@
-import Createflashcard from "./components/Createflashcard";
-import Mycards from "./components/Mycards";
-import Navbar from "./components/Navbar";
-import Viewcard from "./components/Viewcard";
+
+import Createflashcard from "./components/createflashcard/Createflashcard.js";
+import Mycards from "./components/mycards/Mycards.js";
+import Navbar from "./components/navbar/Navbar.js";
+import Viewcard from "./components/viewcard/Viewcard.js";
+
+
 import { HashRouter, Route, Routes } from "react-router-dom";
 import {getMyflashCards} from './service/Localstorage.js'
 import { useState, useEffect } from "react";
