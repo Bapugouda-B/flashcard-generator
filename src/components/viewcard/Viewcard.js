@@ -11,15 +11,16 @@ import { Link, useParams } from "react-router-dom";
 import Popup from "../modals/Popup.js";
 
 const Viewcard = ({ data }) => {
+  //useparams used to access perticular id from url
   const { id } = useParams();
 
-  //state for handling flashterms card definition for slider
+  //state for handling flashterms definition for slider to show particular card term defination.
   const [slideIndex, setSlideIndex] = useState(1);
 
-  //state for Modal open and close
+  //state for handling popup modal to open and close.
   const [openModal, setOpenModal] = useState(false);
 
-  // nextSlide and prevSlide function to view particular flashterms defination with index number.
+  // nextSlide function to view particular flashterms defination with index number.
   const nextSlide = (card) => {
     if (slideIndex !== card.flashterms.length) {
       setSlideIndex(slideIndex + 1);
@@ -28,6 +29,7 @@ const Viewcard = ({ data }) => {
     }
   };
 
+  //// prevSlide function to view particular flashterms defination with index number.
   const prevSlide = (card) => {
     if (slideIndex !== 1) {
       setSlideIndex(slideIndex - 1);
