@@ -11,6 +11,7 @@ const Mycards = () => {
 
   const [myFlashCards, setMyTasks] = useState([]);
 
+  //state to handle for showing required number of cards
   const [noOfCards, setNoOfCards] = useState(6);
 
   // onClick function to see all hidden flashcards
@@ -18,9 +19,10 @@ const Mycards = () => {
     setNoOfCards(noOfCards + myFlashCards.length);
   };
 
-  //slice method used to select and view required no, of cards
+  //slice method used to select and view required number of cards
   const slicedCards = myFlashCards.slice(0, noOfCards);
 
+  //it will render every time when the component changes
   useEffect(() => {
     setMyTasks(getMyflashCards());
   }, []);
