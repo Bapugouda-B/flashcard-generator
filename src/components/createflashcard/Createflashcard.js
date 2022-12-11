@@ -19,13 +19,14 @@ const Createflashcard = () => {
   //main array of objects state used to store all data into local storage
   const [inputFields, setInputFields] = useState(getDatafromLocalstorage());
 
+ //initial form value for formik form handle (must)
   var initialValues = {
     groupname: "",
     description: "",
     flashterms: [{ term: "", defination: "" }],
   };
 
-  //form submits & capture i/p data using onsubmit function.
+  //form submits & capture input data using onsubmit function.
   const onSubmit = (values, action) => {
     setInputFields([...inputFields, { id: uuidv4(), ...values }]);
     action.resetForm();
