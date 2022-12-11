@@ -7,8 +7,7 @@ import { GrClose } from "react-icons/gr";
 function Popup({ closeModal }) {
   const [copyText, setCopyText] = useState(window.location.href);
 
-  //onclick function for coping url as a link.
- 
+//onclick function for copying browser url.
 const copyLink=(e)=>{
   navigator.clipboard.writeText(copyText)
   alert('Link is Copied')
